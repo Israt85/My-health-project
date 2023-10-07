@@ -18,10 +18,12 @@ const Registration = () => {
         userSignUp(email,password)
         .then(result=>{
             console.log(result.user)
+            result.target.reset()
         })
         .catch(error=>{
             console.log(error)
         })
+        
         
       }
     return (
