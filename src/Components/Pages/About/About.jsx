@@ -1,9 +1,14 @@
+import Footer from "../../Sections/Footer/Footer";
+import Banner from "./Banner";
+import WorkSection from "./WorkSection";
 
 
 const About = () => {
     return (
         <div>
-            <h2>This is about</h2>
+          <Banner></Banner>
+          <WorkSection></WorkSection>
+          <Footer></Footer>
         </div>
     );
 };
