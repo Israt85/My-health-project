@@ -10,7 +10,7 @@ const Service = ({data}) => {
    {description.length >200? <p>{description.slice(0,150)}</p>: <p>{description}</p> }
    </div>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Learn now!</button>
+      <button className="btn btn-primary">Show Details</button>
     </div>
   </div>
 </div>
