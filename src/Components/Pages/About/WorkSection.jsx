@@ -8,7 +8,7 @@ const WorkSection = () => {
             <h1 className="text-5xl italic font-semibold text-white">Our Work Process</h1>
             <p className="text-lg font-semibold text-base-300 py-3">Improve customer service by being more proactive in utilizing internal resources and human capital, rather than relying solely on external or organic sources.</p>
             </div>
-            <div className="grid grid-cols-3 px-10 py-5 border-b">
+            <div className="grid grid-cols-3 px-10 py-5 border-b text-base-200">
                 <div className="w-60 text-center p-2">
                     <div className="text-6xl px-14 "><BiPhoneCall></BiPhoneCall></div>
                 <h2 className="text-2xl font-semibold text-blue-950 py-4">Take Appointment</h2>

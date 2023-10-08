@@ -4,7 +4,7 @@ import newBanner from "../../../assets/medicoBanner.jpg"
 const Banner = () => {
     return (
         <div>
-            <div className="hero h-96 bg-sky-100">
+            <div className="hero h-96 ">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src={newBanner} className="max-w-xs rounded-lg shadow-2xl" />
     <div className="w-96 mr-10">
