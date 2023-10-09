@@ -10,7 +10,7 @@ const Appointment = () => {
       <h1 className="text-3xl font-bold">Book An Appointment</h1>
       <p className="py-3">Please Call Us To Ensure...</p>
       </div>
-      <div className="text-7xl hover:bg-sky-950 bg-sky-400 h-24 rounded-full p-4">
+      <div data-aos="zoom-in" data-aos-duration="2000" className="text-7xl hover:bg-sky-950 bg-sky-400 h-24 rounded-full p-4">
          <BiPhoneCall></BiPhoneCall>
       </div>
     </div>
@@ -54,7 +54,7 @@ const Appointment = () => {
           <input type="date" placeholder="DOB" className="input input-bordered" required />
         </div>
       </form>
-      <div className="w-32 border mx-auto">
+      <div className="w-32 border mx-auto"data-aos="zoom-in">
       <button className="btn btn-primary">Appointment</button>
       </div>
     </div>
