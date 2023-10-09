@@ -15,7 +15,7 @@ const Appointment = () => {
       </div>
     </div>
    
-      <form className=" bg-sky-100 card-body grid grid-cols-2 gap-6 mx-10">
+      <form className=" bg-sky-100 card-body grid grid-cols-1 lg:grid-cols-2 gap-6 mx-10">
        
         <div className="form-control">
           <label className="label">

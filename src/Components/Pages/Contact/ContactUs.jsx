@@ -3,8 +3,8 @@
 const ContactUs = () => {
     return (
         <div className="w-full h-auto mt-10 bg-slate-50">
-            <h2 className="text-3xl text-blue-900 font-bold">Contact Us For any Inquiry</h2>
-            <p className="text-lg py-3 text-sky-600 font-normal">We are here to support your health and well-being every step of the way. Whether you have questions about a specific medical condition, need advice on maintaining a healthy lifestyle, or seek guidance on healthcare options, our team is dedicated to providing you with accurate and compassionate information.</p>
+            <h2 className="text-3xl px-4 text-blue-900 font-bold">Contact Us For any Inquiry</h2>
+            <p className="text-lg py-3 px-4 text-sky-600 font-normal">We are here to support your health and well-being every step of the way. Whether you have questions about a specific medical condition, need advice on maintaining a healthy lifestyle, or seek guidance on healthcare options, our team is dedicated to providing you with accurate and compassionate information.</p>
             <form className=" grid grid-cols-2 gap-6 mx-10">
 
                 <div className="form-control">

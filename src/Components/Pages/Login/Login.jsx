@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Login = () => {
-    const {userLogin} = useContext(AuthContext)
+  
+    const {userLogin, googleLogin} = useContext(AuthContext)
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -13,12 +14,24 @@ const Login = () => {
         const email = form.get('email')
         const password = form.get('password')
         console.log(email,password)
+        googleLogin()
+        .then(result=>{
+          console.log(result.user);
+          navigate(location?.state? location.state : "/" )
+            e.target.reset()
+        })
+          .catch(err=>{
+            console.log(
+              err
+            );
+          })
+        
 
         userLogin(email,password)
         .then(result =>{
             console.log(result.user)
             navigate(location?.state? location.state : "/" )
-            result.target.reset()
+            e.target.reset()
 
         })
         .catch(error =>{
@@ -51,6 +64,8 @@ const Login = () => {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
+
+
         <p>New to this website? Please <Link className="text-blue-700 font-semibold underline" to="/registration">Register</Link> </p>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
